@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./module.css">
+    <script src="./module.js"></script>
+</head>
+<body>
+    <div id="aside" class="aside"></div>
+</body>
+<style>
+    .aside {
+        width: 20%;
+    }
+</style>
+<script>
+    function clickEvent() {
+        let data =  [
+                        {
+                            "imgUrl": "../../static/img/test.jpg",
+                            "text": "这是一张风景图",
+                            "type": "img"
+                        },
+                        {
+                            "imgUrl": "../../static/img/test(1).jpg",
+                            "type": "img"
+                        },
+                        {
+                            "text": "Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。如果你想在深入学习 Vue 之前对它有更多了解，我们制作了一个视频，带您了解其核心概念和一个示例工程。如果你已经是有经验的前端开发者，想知道 Vue 与其它库/框架有哪些区别，请查看对比其它框架",
+                            "type": "text"
+                        },
+                        {
+                            "previewUrl": "../../static/img/nursery-rhyme.png",
+                            "videoUrl": "../../static/video/nursery-rhyme.mkv",
+                            "type": "video",
+                            "text": "这是一个小视频"
+                        }
+                    ]
+        function sendData(data) {
+        }            
+        initNav(data, "aside", sendData)
+    }
+    setTimeout(clickEvent(), 1000)
+</script>
+</html>

@@ -1,0 +1,23 @@
+
+.text-type, .img-type {
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 2px;
+}
+.img-type {
+    background: #83cad2;
+}
+.text-type {
+    background: #e0e0e0;
+}
+.text-type img, .img-type img {
+    width: 100%;
+}
+.text-type text, .img-type.text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
